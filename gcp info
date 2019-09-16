@@ -1,0 +1,36 @@
+GCP 
+
+https://cloud.google.com/run/docs/quickstarts/build-and-deploy
+
+nimble-charmer-253115
+
+gcloud config set project nimble-charmer-253115
+
+
+gcloud builds submit --tag gcr.io/PROJECT-ID/helloworld
+
+gcloud builds submit --tag gcr.io/nimble-charmer-253115/helloworld
+gcloud builds submit --tag gcr.io/nimble-charmer-253115/helloworld
+
+gcloud beta run deploy --image gcr.io/nimble-charmer-253115/helloworld --platform managed
+
+# 
+
+gcloud config set project anagrams
+Updated property [core/project].
+
+gcloud builds submit --tag gcr.io/anagrams/anagrams
+
+gcloud builds submit --tag gcr.io/anagrams/anagrams
+
+user permission : Cloud Build API
+https://console.cloud.google.com/apis/api/cloudbuild.googleapis.com/overview?project=1030459280271
+
+gcloud beta run deploy --image gcr.io/PROJECT-ID/helloworld --platform managed
+gcloud beta run deploy --image gcr.io/anagrams/anagrams --platform managed
+
+access to project : Cloud Run API
+https://console.cloud.google.com/apis/api/run.googleapis.com/overview?project=1030459280271
+
+https://anagrams-anx6f5o7ca-uc.a.run.app/anagrams
+
